@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+li {
+  list-style: none;
+}
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #d5c455;
+  --genaral-color: #fff;
+  --primary-text: #222222;
+  --secondary-text: #d5c455;
+  --path-color: #7e7d7de4;
+}
+#workSection {
+  width: 100%;
+  height: 1750px;
+  position: relative;
+  background-color: var(--primary-color);
+}
+.titleOfPage {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  top: 180px;
+}
+.path {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  line-height: 45px;
+}
+.path p,
+a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--path-color);
+}
+.pageName {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.work_I_did {
+  position: absolute;
+  bottom: 50px;
+  height: 850px;
+  right: 95px;
+  top: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 40px;
+}
+.work_I_did .work_Main {
+  height: 280px;
+  width: 329px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  border-radius: 3px;
+  background-color: var(--genaral-color);
+}
+
+.work_I_did .work_Main img {
+  height: 380px;
+  width: 439px;
+}
+
+.work_Main:hover .about_work {
+  display: block;
+  background-color: #d5c455d0;
+}
+
+.work_Main:hover {
+  background-color: var(--secondary-color);
+}
+
+.work_Main .about_work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: var(--genaral-color);
+  display: none;
+}
+.work_Main .about_work .title {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  font-size: 25px;
+  right: 50px;
+}
+.work_Main .about_work .category {
+  position: absolute;
+  top: 210px;
+  left: 50px;
+  font-size: 14px;
+  right: 50px;
+}
+
+.work_Main:hover .about_work {
+  display: block;
+}
+
+.work_I_did .pagination_btns {
+  display: flex;
+  position: absolute;
+  top: 1200px;
+  justify-content: center;
+  column-gap: 7px;
+}
+.work_I_did .pagination_btns button {
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid #d5d2d292;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 1.5;
+}
+.work_I_did .pagination_btns button:hover {
+  background-color: var(--secondary-color);
+  color: var(--genaral-color);
+  border: none;
+}
+
+/* copy write */
+.work_I_did .copy {
+  top: 1300px;
+}
+/* copy write */
+
+/* resposive */
+@media screen and (max-width: 1024px) {
+  #workSection {
+    width: 1024px;
+    height: 2550px;
+  }
+  .Continer {
+    width: 900px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .titleOfPage,
+  .secondTitle,
+  .thirdTitle {
+    width: 900px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* pagination */
+  .work_I_did .pagination_btns {
+    display: flex;
+    position: absolute;
+    top: 2000px;
+    justify-content: center;
+    column-gap: 7px;
+  }
+  /* pagination */
+  /* copy write */
+  .work_I_did .copy {
+    top: 2100px;
+  }
+  /* copy write */
+}
+/* tab */
+@media (max-width: 768px) {
+  #workSection {
+    width: 768px;
+    height: 2500px;
+  }
+  .Continer {
+    width: 768px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* title */
+  .titleOfPage {
+    width: 768px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* work */
+  .work_I_did {
+    right: 0px;
+    justify-content: space-around;
+  }
+  .work_I_did .work_Main {
+    height: 320px;
+    width: 369px;
+  }
+  /* pagination */
+  .work_I_did .pagination_btns {
+    top: 1900px;
+  }
+  /* pagination */
+
+  /* copy */
+  .work_I_did .copy {
+    top: 2100px;
+  }
+  /* copy */
+  /* work */
+}
+/* tab */
+/* mobile */
+@media screen and (max-width: 426px) {
+  #workSection {
+    width: 426px;
+    height: 3550px;
+  }
+  .Continer {
+    width: 426px;
+  }
+
+  .work_I_did .work_Main img {
+    height: 380px;
+    width: 369px;
+  }
+  /* pagination */
+  .work_I_did .pagination_btns {
+    top: 3000px;
+  }
+  /* pagination */
+
+  /* copy */
+  .work_I_did .copy {
+    top: 3100px;
+    padding: 20px;
+  }
+}
+
+/* mobile */
+/* resposive */

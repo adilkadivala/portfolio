@@ -1,0 +1,160 @@
+.changeTab {
+  display: inline-flex;
+}
+.changeTab button {
+  border: 1px solid #181b3a;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 800px;
+  margin-left: 30px;
+  color: #1386d3;
+  font-weight: 600;
+  background-color: white;
+  font-size: 14px;
+}
+.changeTab span {
+  border-bottom: 2px solid #1386d3;
+}
+
+.makerTab {
+  margin-left: 30px;
+}
+
+.changeTab button.active-tab {
+  background-color: hsl(204, 83%, 45%);
+  color: white;
+}
+.changeTab button span.active-tab {
+  border-bottom: 2px solid white;
+}
+
+.changeTab button:active {
+  background-color: #1386d3;
+}
+
+.changeTab button span:active {
+  border-bottom: 2px solid white;
+}
+
+.makerTab {
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.info p {
+  font-size: 27px;
+  font-weight: 700;
+  color: #1386d3;
+  /* margin-bottom: 20px; */
+}
+
+.danger {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.danger p {
+  font-size: 20px;
+}
+
+.releted {
+  margin-left: 300px;
+  /* margin-top: -20px; */
+  font-size: 30px;
+  font-weight: 700;
+  color: #1386d3;
+  margin-bottom: -5px;
+}
+
+.releted_pro span {
+  border-bottom: 2px solid #1386d3;
+  padding-left: 40px;
+  margin-left: 300px;
+}
+
+.extra {
+  margin-top: -50px;
+  /* margin-left: 5px; */
+}
+
+.tec_title {
+  /* margin-bottom: 40px; */
+  font-size: 32px;
+  font-weight: 700;
+  color: #1386d3;
+  margin-bottom: -12px;
+}
+
+.tec_border span {
+  border-bottom: 3px solid #1386d3;
+  padding-left: 50px;
+}
+
+.tec_border {
+  margin-bottom: 40px;
+}
+.tec_main {
+  display: flex;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.tec_doc_tit p {
+  font-size: 18px;
+  margin-left: 20px;
+  color: #5a5e62;
+}
+
+.tec_pdf i {
+  font-size: 40px;
+}
+
+.tec_down {
+  margin-left: 40px;
+  font-size: 22px;
+}
+/* .sabka_main{
+    margin-top: 400px;
+  } */
+
+.photo_img {
+  display: flex;
+  margin-left: -20px;
+  flex-wrap: wrap;
+}
+
+.childs_img {
+  width: 320px;
+  height: 250px;
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  /* background-color: blue; */
+}
+
+.childs_img img {
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.head_photo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1386d3;
+}
+
+.photo_span span {
+  border-bottom: 2px solid #1386d3;
+  padding-left: 50px;
+}
+
+.photo_span {
+  margin-bottom: 25px;
+}
+.form-label {
+  color: black;
+}
+/*   /* changetab */

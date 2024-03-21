@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+li {
+  list-style: none;
+}
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #d5c455;
+  --genaral-color: #fff;
+  --primary-text: #222222;
+  --secondary-text: #d5c455;
+  --path-color: #7e7d7de4;
+}
+.Continer {
+  width: 1261px;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+#mainServices {
+  width: 100%;
+  height: 1300px;
+  position: relative;
+  background-color: var(--primary-color);
+}
+.titleOfPage {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  top: 180px;
+}
+.path {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  line-height: 45px;
+}
+.path p,
+a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--path-color);
+}
+.pageName {
+  font-size: 35px;
+  font-weight: 700;
+}
+/* abilities */
+.abilities_I_can {
+  position: absolute;
+  bottom: 50px;
+  height: 790px;
+  right: 95px;
+  top: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 0;
+}
+.abilities_I_can .chield_Abilities {
+  height: 369px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 10px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: var(--genaral-color);
+  transition: background-color 1.5s, color 1.5s;
+}
+.abilities_I_can .chield_Abilities:hover {
+  background-color: var(--secondary-color);
+}
+
+.abilities_I_can .chield_Abilities i {
+  font-size: 80px;
+  color: var(--secondary-color);
+}
+
+.abilities_I_can .chield_Abilities .ability_heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+.abilities_I_can .chield_Abilities .ability_description {
+  font-size: 15px;
+  color: var(--path-color);
+}
+.abilities_I_can .chield_Abilities:hover i,
+.abilities_I_can .chield_Abilities:hover .ability_description,
+.abilities_I_can .chield_Abilities:hover .ability_heading {
+  color: white;
+}
+
+.abilities_I_can .copy {
+  top: 860px;
+}
+
+/* abilities */
+
+/* resposive */
+@media screen and (max-width: 1024px) {
+  #mainServices {
+    width: 1024px;
+    height: 1700px;
+  }
+  .Continer {
+    width: 900px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .titleOfPage,
+  .secondTitle,
+  .thirdTitle {
+    width: 900px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .abilities_I_can {
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .abilities_I_can .chield_Abilities {
+    width: 280px;
+  }
+  /* copy */
+  .abilities_I_can .copy {
+    top: 1260px;
+  }
+  /* copy */
+}
+/* tab */
+@media (max-width: 768px) {
+  #mainServices {
+    width: 768px;
+    height: 2100px;
+  }
+  .Continer {
+    width: 768px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* title */
+  .titleOfPage {
+    width: 768px;
+    left: 50px;
+  }
+  /* services */
+  .abilities_I_can {
+    right: 0px;
+    width: 950px;
+    row-gap: 35px;
+  }
+  /* services */
+  /* copy */
+  .abilities_I_can .copy {
+    top: 1660px;
+  }
+  /* copy */
+}
+/* tab */
+/* mobile */
+@media screen and (max-width: 426px) {
+  #mainServices {
+    width: 426px;
+    height: 3700px;
+  }
+  .Continer {
+    width: 426px;
+  }
+  .abilities_I_can .copy {
+    top: 3260px;
+    padding: 10px;
+  }
+}
+
+/* mobile */
+/* resposive */

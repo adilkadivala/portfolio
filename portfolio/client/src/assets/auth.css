@@ -1,0 +1,512 @@
+.blue {
+  color: #416893;
+}
+
+.grey {
+  color: gray;
+}
+
+#authContainer {
+  border-radius: 2%;
+  width: 100vw;
+  max-width: 50vw;
+  box-shadow: 1px 1px 20px 3px #00000059;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 90vh;
+  background-color: whitesmoke;
+}
+
+.overlay_container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  background-color: #416893;
+  background-image: linear-gradient(
+      25deg,
+      rgb(65 104 147 / 0.95) 0%,
+      rgb(65 104 147 / 0.98) 100%
+    ),
+    url("../assets/images/work1.jpg");
+
+  color: whitesmoke;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay_panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+.overlay_left {
+  transform: translateY(50%);
+  left: 0;
+}
+.overlay_right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.overlay_button {
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  transition: all 0.1s;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #416893;
+}
+.overlay_button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.overlay_button:active {
+  transform: scale(1.1);
+}
+
+.overlay_button:focus {
+  outline: none;
+}
+
+.overlay_panel p {
+  margin: 0px 0px 40px 0px;
+  font-size: 15px;
+}
+
+.form_container {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.sign_in,
+.sign_up {
+  background-color: whitesmoke;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2% 0% 0% 2%;
+  text-align: center;
+  color: whitesmoke;
+  justify-content: center;
+  z-index: 2;
+}
+
+.sign_up {
+  opacity: 0;
+  z-index: 1;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  min-width: 85%;
+  position: absolute;
+  right: 0;
+}
+
+.rs_icons i {
+  background-color: white;
+  padding: 10px;
+  width: 35px;
+  border-radius: 50%;
+  border: solid 1px lightgrey;
+  margin: 5px;
+  color: #416893;
+  transition: all 0.1s;
+}
+.rs_icons i:hover {
+  border: solid 1px grey;
+}
+
+.form_container input[type="text"],
+input[type="password"],
+input[type="email"] {
+  height: 40px;
+  padding: 0px 0px 0px 40px !important;
+  width: 300px;
+  font-size: 15px;
+  color: grey;
+}
+.user > input i {
+  font-size: 20px;
+}
+
+.submit {
+  justify-content: center;
+  display: flex;
+}
+
+.submit input {
+  background-color: #416893;
+  color: whitesmoke;
+  border: 0px;
+  padding: 10px;
+  transition: all 0.1s;
+}
+
+.submit input:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.submit:active {
+  transform: scale(1.1);
+}
+
+.submit:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.icon {
+  position: relative;
+  padding-bottom: 1rem;
+  font-size: 15px;
+}
+
+.remember h5 {
+  margin: 0px;
+}
+
+.user i {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  color: gray;
+}
+
+.email i {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  color: gray;
+}
+
+.phone i {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  color: gray;
+}
+
+.password i {
+  position: absolute;
+  left: 17px;
+  top: 11px;
+  color: gray;
+}
+
+.show {
+  left: 310px !important;
+}
+
+.show:hover {
+  cursor: pointer;
+}
+
+.show:active {
+  transform: scale(1.1);
+}
+
+.signature {
+  font-size: 0.75rem;
+  position: relative;
+  color: whitesmoke;
+}
+
+.remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  color: whitesmoke;
+  background-color: #416893;
+}
+
+.logout {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-bottom: 10px;
+}
+
+.logout:hover {
+  color: gray;
+}
+
+.logout:active {
+  transform: scale(1.1);
+}
+
+.error {
+  width: 350px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.error .blue {
+  margin: 0px;
+}
+
+h6.grey {
+  margin: 1rem;
+}
+
+#signInMobile {
+  display: none;
+}
+
+/* Responsive Styles */
+
+/* Ipad 1024x768 */
+@media all and (max-width: 1024px) and (max-height: 768px) {
+  body {
+    align-items: inherit;
+  }
+  #authContainer {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .sign_in,
+  .sign_up {
+    width: 50%;
+  }
+
+  .email i,
+  .password i,
+  .user i,
+  .phone i {
+    left: 45px;
+  }
+
+  .show {
+    left: 335px !important;
+  }
+}
+
+/* Ipad Vertical 768x1024 */
+@media all and (max-width: 768px) and (max-height: 1024px) {
+  body {
+    align-items: inherit;
+  }
+  #authContainer {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .sign_in,
+  .sign_up {
+    width: 50%;
+  }
+
+  .email i,
+  .password i,
+  .user i,
+  .phone i {
+    left: 15px;
+  }
+
+  .show {
+    left: 310px !important;
+  }
+}
+
+/* Most of the Phones in Vertical */
+@media all and (max-width: 414px) and (max-height: 823px) {
+  body {
+    align-items: inherit;
+    overflow-y: inherit;
+  }
+  #authContainer {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .sign_in,
+  .sign_up {
+    width: 100%;
+  }
+
+  .email i,
+  .password i,
+  .user i,
+  .phone i {
+    right: auto;
+  }
+
+  .show {
+    margin-left: 85% !important;
+    left: 0px !important;
+  }
+  .overlay_container {
+    left: 0;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 85%;
+  }
+
+  #signInMobile {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  #authContainer.right-panel-active .sign_in {
+    transform: translateX(0%) !important;
+  }
+
+  #authContainer.right-panel-active .sign_up {
+    transform: translateX(0%) !important;
+    /* opacity: 0!important;
+    z-index: 1 !important; */
+  }
+
+  #authContainer.mobile .overlay_container {
+    transform: translateX(100%) !important;
+  }
+}
+
+/* Most of the Phones in Horizontal */
+@media all and (max-width: 823px) and (max-height: 414px) {
+  body {
+    align-items: inherit;
+    overflow-y: inherit;
+  }
+  #authContainer {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .sign_in,
+  .sign_up {
+    width: 100%;
+  }
+
+  .email i,
+  .password i,
+  .user i,
+  .phone i {
+    right: 0px !important;
+    margin-right: 85% !important;
+    left: 0px !important;
+  }
+
+  .show {
+    margin-left: 85% !important;
+    left: 0px !important;
+  }
+  .overlay_container {
+    left: 0;
+    width: 100%;
+  }
+
+  .overlay_panel {
+    height: 100vh;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 85%;
+  }
+
+  #signInMobile {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  #authContainer.right-panel-active .sign_in {
+    transform: translateX(0%) !important;
+  }
+
+  #authContainer.right-panel-active .sign_up {
+    transform: translateX(0%) !important;
+    /* opacity: 0!important;
+      z-index: 1 !important; */
+  }
+
+  #authContainer.mobile .overlay_container {
+    transform: translateX(100%) !important;
+  }
+}
+
+/* Animation Styles */
+#authContainer.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+#authContainer.right-panel-active .overlay_container {
+  transform: translateX(-100%);
+}
+
+#authContainer.right-panel-active .sign_in {
+  transform: translateX(100%);
+}
+
+#authContainer.right-panel-active .sign_up {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  49.9940% {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+#authContainer.right-panel-active .overlay_left {
+  transform: translateX(0);
+}
+#authContainer.right-panel-active .overlay_right {
+  transform: translateX(20%);
+}
